@@ -1,0 +1,127 @@
+
+document.querySelector("#enviar").addEventListener("click", () => {
+  const confirmado = document.querySelector("input[name='q1']:checked");
+
+  if (confirmado && confirmado.value === "B") {
+    // cria ou atualiza uma mensagem de feedback
+    let feedback = document.querySelector("#p1 .feedback");
+    if (!feedback) {
+      feedback = document.createElement("p");
+      feedback.classList.add("feedback");
+      document.querySelector("#p1").appendChild(feedback);
+    }
+     feedback.innerHTML = "<br> ✅ Resposta correta! ";
+  } else {let feedback = document.querySelector("#p1 .feedback");
+    if (!feedback) {
+      feedback = document.createElement("p");
+      feedback.classList.add("feedback");
+      document.querySelector("#p1").appendChild(feedback);
+    }
+    feedback.innerHTML = "<br> ❌ Resposta incorreta  ou nenhuma opção marcada.";
+  }
+});
+
+document.querySelector("#enviar2").addEventListener("click", () => {
+  const confirmado = document.querySelector("input[name='q2']:checked");
+
+  if (confirmado && confirmado.value === "B") {
+    // cria ou atualiza uma mensagem de feedback
+    let feedback = document.querySelector("#p2 .feedback");
+    if (!feedback) {
+      feedback = document.createElement("p");
+      feedback.classList.add("feedback");
+      document.querySelector("#p2").appendChild(feedback);
+    }
+     feedback.innerHTML = "<br> ✅ Resposta correta! ";
+  } else {let feedback = document.querySelector("#p2 .feedback");
+    if (!feedback) {
+      feedback = document.createElement("p");
+      feedback.classList.add("feedback");
+      document.querySelector("#p2").appendChild(feedback);
+    }
+    feedback.innerHTML = "<br> ❌ Resposta incorreta  ou nenhuma opção marcada.";
+  }
+});
+
+
+document.querySelector("#enviar3").addEventListener("click", () => {
+  const confirmado = document.querySelector("input[name='q3']:checked");
+
+  if (confirmado && confirmado.value === "B") {
+    // cria ou atualiza uma mensagem de feedback
+    let feedback = document.querySelector("#p3 .feedback");
+    if (!feedback) {
+      feedback = document.createElement("p");
+      feedback.classList.add("feedback");
+      document.querySelector("#p3").appendChild(feedback);
+    }
+     feedback.innerHTML = "<br> ✅ Resposta correta! ";
+  } else {let feedback = document.querySelector("#p3 .feedback");
+    if (!feedback) {
+      feedback = document.createElement("p");
+      feedback.classList.add("feedback");
+      document.querySelector("#p3").appendChild(feedback);
+    }
+    feedback.innerHTML = "<br> ❌ Resposta incorreta  ou nenhuma opção marcada.";
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// feitos
+
+const p1 = document.getElementById("p1");
+const p2 = document.getElementById("p2");
+const p3 = document.getElementById("p3");
+
+p1.addEventListener("mouseenter", () => {
+  if (window.innerWidth > 800) {
+    p1.style.width = "500px";
+  }
+});
+  p1.addEventListener("mouseleave", () => {
+    p1.style.width = "auto";
+  });
+
+ p2.addEventListener("mouseenter", () => {
+  if (window.innerWidth > 800) {
+    p2.style.width = "500px";
+  }
+});
+  p2.addEventListener("mouseleave", () => {
+    p2.style.width = "auto";
+  });
+
+p3.addEventListener("mouseenter", () => {
+  if (window.innerWidth > 800) {
+    p3.style.width = "500px";
+  }
+});
+  p3.addEventListener("mouseleave", () => {
+    p3.style.width = "auto";
+  });
